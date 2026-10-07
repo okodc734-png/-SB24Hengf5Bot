@@ -80,6 +80,7 @@ async def button_handler(
 ):
 
     query = update.callback_query
+
     await query.answer()
 
     if query.data == "latest_music":
@@ -164,6 +165,7 @@ async def menu_handler(
 ):
 
     query = update.callback_query
+
     await query.answer()
 
     await query.message.reply_text(
